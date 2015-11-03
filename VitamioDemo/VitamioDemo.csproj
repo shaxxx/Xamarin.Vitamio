@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{C3D893B3-14F4-4009-83E4-59235E5EA68A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IO.Vov.Vitamio.Demo</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>VitamioDemo</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VitamioListActivity.cs" />
+    <Compile Include="MediaMetadataRetrieverDemo.cs" />
+    <Compile Include="MediaPlayerDemo.cs" />
+    <Compile Include="MediaPlayerDemo_Audio.cs" />
+    <Compile Include="SimpleListAdapter.cs" />
+    <Compile Include="MediaPlayerDemo_setSurface.cs" />
+    <Compile Include="MediaPlayerDemo_Video.cs" />
+    <Compile Include="MediaPlayerSubtitle.cs" />
+    <Compile Include="VideoSubtitleList.cs" />
+    <Compile Include="VideoViewBuffer.cs" />
+    <Compile Include="VideoViewDemo.cs" />
+    <Compile Include="VideoViewSubtitle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\raw\test_cbr.mp3" />
+    <AndroidResource Include="Resources\layout\mediaplayer_1.xml" />
+    <AndroidResource Include="Resources\layout\mediaplayer_2.xml" />
+    <AndroidResource Include="Resources\layout\mediaplayer_3.xml" />
+    <AndroidResource Include="Resources\layout\media_metadata.xml" />
+    <AndroidResource Include="Resources\layout\subtitle1.xml" />
+    <AndroidResource Include="Resources\layout\subtitle2.xml" />
+    <AndroidResource Include="Resources\layout\videobuffer.xml" />
+    <AndroidResource Include="Resources\layout\videoview.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\mediacontroller_screen_fit.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\mediacontroller_screen_size.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\mediacontroller_sreen_size_100.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\mediacontroller_sreen_size_crop.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\raw\libarm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\raw\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Vitamio\Xamarin.Vitamio.csproj">
+      <Project>{1E988293-95EE-4E85-ABD9-EE58160628B6}</Project>
+      <Name>Xamarin.Vitamio</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Vitamio", "Xamarin.Vitamio\Xamarin.Vitamio.csproj", "{1E988293-95EE-4E85-ABD9-EE58160628B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VitamioDemo", "VitamioDemo\VitamioDemo.csproj", "{C3D893B3-14F4-4009-83E4-59235E5EA68A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E988293-95EE-4E85-ABD9-EE58160628B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E988293-95EE-4E85-ABD9-EE58160628B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E988293-95EE-4E85-ABD9-EE58160628B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E988293-95EE-4E85-ABD9-EE58160628B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D893B3-14F4-4009-83E4-59235E5EA68A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D893B3-14F4-4009-83E4-59235E5EA68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D893B3-14F4-4009-83E4-59235E5EA68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D893B3-14F4-4009-83E4-59235E5EA68A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
